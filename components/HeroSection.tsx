@@ -1,0 +1,93 @@
+import Image from "next/image";
+
+const WhatsAppIcon = () => (
+  <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
+    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.498 1.45 5.42 1.451 5.58 0 10.121-4.542 10.124-10.122.002-2.702-1.05-5.244-2.96-7.157C17.32 1.412 14.78 0.36 12.008 0.36 6.425.36 1.884 4.901 1.881 10.485c-.001 1.81.474 3.58 1.378 5.155l-1.012 3.697 3.81-.999zM17.91 14.65c-.32-.16-1.89-.93-2.185-1.04-.294-.11-.51-.16-.724.16-.214.32-.83 1.04-1.018 1.25-.187.21-.375.24-.694.08-.318-.16-1.343-.495-2.558-1.578-.946-.844-1.585-1.886-1.772-2.2-.187-.32-.02-.49.14-.65.144-.144.32-.37.48-.56.16-.19.213-.32.32-.53.107-.21.053-.4-.027-.56-.08-.16-.724-1.74-.993-2.39-.26-.63-.53-.55-.724-.56-.187-.01-.4-.01-.614-.01-.214 0-.56.08-.853.4-.293.32-1.12 1.1-1.12 2.678 0 1.579 1.147 3.106 1.307 3.32.16.21 2.257 3.447 5.467 4.834.763.33 1.36.527 1.822.674.768.243 1.467.209 2.02.127.617-.092 1.89-.77 2.156-1.48.266-.71.266-1.32.187-1.45-.078-.13-.293-.21-.613-.37z" />
+  </svg>
+);
+
+export default function HeroSection() {
+  return (
+    <section id="inicio" className="relative overflow-hidden pt-36 pb-16 lg:pt-40 lg:pb-24">
+      <div className="absolute left-0 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-pink-200/40 blur-3xl" />
+      <div className="absolute right-0 top-24 h-96 w-96 translate-x-1/3 rounded-full bg-pink-100/30 blur-3xl" />
+
+      <div className="container-shell relative grid items-center gap-12 lg:grid-cols-[1fr_1fr]">
+        <div className="space-y-8">
+          <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.25em] text-[#c53d6a]">
+            <span className="w-8 h-px bg-[#c53d6a]" />
+            Dia dos Namorados 2026
+          </div>
+
+          <div className="space-y-5">
+            <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-medium leading-[1.15] tracking-tight text-[#24161a]">
+              Alianças que <br className="hidden sm:inline" />
+              selam o <span className="text-[#c53d6a] italic font-serif">seu amor</span>
+            </h1>
+            <p className="max-w-xl text-[15px] sm:text-[16px] leading-relaxed text-[#6b585c]">
+              Namorados, noivos ou casados — o par perfeito para o seu Dia dos Namorados. Aço cirúrgico, banho de ouro 18k ou prata 925 com qualidade premium da Glamour Lindóia.
+            </p>
+          </div>
+
+          <div className="space-y-2 py-2 border-y border-pink-100/60 max-w-md">
+            <div className="flex items-baseline gap-2 flex-wrap">
+              <span className="text-sm text-gray-400 line-through">De R$ 199,90</span>
+              <span className="text-[#c53d6a] font-serif text-3xl sm:text-4.5xl font-semibold">R$ 99,90</span>
+              <span className="text-xs text-gray-500 font-medium">o par</span>
+            </div>
+            <p className="text-[13px] text-gray-500">
+              ou <strong className="text-gray-700">5x de R$ 18,88</strong> no cartão • <strong className="text-gray-700">10% OFF</strong> no PIX
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20comprar%20o%20par%20de%20alian%C3%A7as%20por%20R$99,90."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-[#c53d6a] hover:bg-[#ae2e59] text-white! font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all text-sm uppercase tracking-wider"
+              style={{ color: '#ffffff' }}
+            >
+              <WhatsAppIcon />
+              Comprar pelo WhatsApp
+            </a>
+            <a
+              href="#colecoes"
+              className="inline-flex items-center justify-center border border-gray-300 hover:border-gray-400 bg-white text-gray-800 font-bold px-8 py-4 rounded-full shadow-sm hover:shadow-md transition-all text-sm uppercase tracking-wider"
+            >
+              Ver modelos
+            </a>
+          </div>
+        </div>
+
+        <div className="relative justify-self-center lg:justify-self-end w-full max-w-[480px]">
+          <div className="relative aspect-square w-full overflow-hidden rounded-[4px] border border-pink-100 bg-white p-2 shadow-xl">
+            <div className="relative h-full w-full overflow-hidden rounded-[2px]">
+              <Image
+                src="/assets/hero-jewelry.jpg"
+                alt="Alianças Glamour Lindóia"
+                fill
+                priority
+                sizes="(max-width: 768px) 100vw, 480px"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
+            </div>
+
+            <div className="absolute top-5 right-5 bg-[#c53d6a] text-white text-[11px] font-bold px-3 py-1 uppercase tracking-wider shadow-sm z-10">
+              -50% HOJE
+            </div>
+
+            <div className="absolute -bottom-4 -left-4 bg-white border border-pink-100 px-5 py-3 shadow-lg z-10 max-w-[180px] rounded-sm">
+              <span className="block text-[9px] font-bold text-[#c53d6a] uppercase tracking-widest mb-1">
+                Mais Vendido
+              </span>
+              <span className="block text-sm font-medium font-serif text-[#24161a]">
+                Par Eternidade
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

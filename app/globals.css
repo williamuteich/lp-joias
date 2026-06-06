@@ -1,1 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,400;1,6..12,700&display=swap");
 @import "tailwindcss";
+
+:root {
+	--background: 345 40% 98%;
+	--foreground: 340 25% 12%;
+	--card: 0 0% 100%;
+	--card-foreground: 340 25% 12%;
+	--popover: 0 0% 100%;
+	--popover-foreground: 340 25% 12%;
+	--primary: 340 54% 51%;
+	--primary-foreground: 0 0% 100%;
+	--secondary: 345 30% 95%;
+	--secondary-foreground: 340 25% 12%;
+	--muted: 345 20% 92%;
+	--muted-foreground: 340 15% 45%;
+	--accent: 340 50% 60%;
+	--accent-foreground: 0 0% 100%;
+	--border: 345 25% 88%;
+	--input: 345 25% 88%;
+	--ring: 340 54% 51%;
+	--radius: 1rem;
+	--font-display: "Cormorant Garamond", serif;
+	--font-body: "Nunito Sans", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	color: hsl(var(--foreground));
+	background:
+		radial-gradient(circle at top left, hsl(340 54% 51% / 0.08), transparent 35%),
+		radial-gradient(circle at right 25%, hsl(340 54% 51% / 0.06), transparent 25%),
+		linear-gradient(180deg, hsl(var(--background)) 0%, hsl(345 35% 94%) 100%);
+	font-family: var(--font-body);
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	pointer-events: none;
+	opacity: 0.35;
+	background-image: linear-gradient(135deg, transparent 0 48%, hsl(340 54% 51% / 0.03) 48% 52%, transparent 52% 100%);
+	background-size: 26px 26px;
+	mask-image: linear-gradient(180deg, black, transparent 92%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-display);
+}
+
+::selection {
+	background: hsl(var(--primary));
+	color: hsl(var(--primary-foreground));
+}
+
+.container-shell {
+	width: min(1140px, calc(100% - 2rem));
+	margin-inline: auto;
+}
+
+.section {
+	position: relative;
+	padding: 5rem 0;
+}
+
+.section-kicker {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+	margin-bottom: 1rem;
+	color: hsl(var(--primary));
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-size: 0.68rem;
+}
+
+.section-kicker::before,
+.section-kicker::after {
+	content: "";
+	width: 2.5rem;
+	height: 1px;
+	background: hsl(var(--primary) / 0.7);
+}
+
+.section-title {
+	font-size: clamp(2.2rem, 5vw, 4.8rem);
+	line-height: 0.98;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	color: hsl(var(--foreground));
+	text-align: center;
+}
+
+.section-copy {
+	max-width: 42rem;
+	margin: 1rem auto 0;
+	text-align: center;
+	color: hsl(var(--muted-foreground));
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.text-gradient-gold {
+	background: linear-gradient(135deg, hsl(340 54% 51%), hsl(345 70% 65%), hsl(340 40% 46%));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.card-lux {
+	background: hsl(var(--card) / 0.82);
+	border: 1px solid hsl(var(--border) / 0.9);
+	box-shadow: 0 18px 40px -24px hsl(340 25% 12% / 0.15);
+	backdrop-filter: blur(18px);
+}
+
+.shadow-soft {
+	box-shadow: 0 14px 30px -22px hsl(340 25% 12% / 0.15);
+}
+
+.hero-panel {
+	background: linear-gradient(180deg, hsl(0 0% 100% / 0.85), hsl(345 40% 97% / 0.94));
+	border: 1px solid hsl(var(--border) / 0.85);
+	border-radius: 2rem;
+}
+
+.lux-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.6rem;
+	padding: 0.95rem 1.4rem;
+	border-radius: 9999px;
+	font-weight: 700;
+	transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.lux-button:hover {
+	transform: translateY(-1px);
+}
+
+.lux-button-primary {
+	color: hsl(var(--primary-foreground));
+	background: hsl(var(--primary));
+	box-shadow: 0 18px 30px -16px hsl(var(--primary) / 0.35);
+}
+
+.lux-button-primary:hover {
+	background: hsl(340 54% 45%);
+}
+
+.lux-button-secondary {
+	color: hsl(var(--foreground));
+	background: hsl(0 0% 100% / 0.7);
+	border: 1px solid hsl(var(--border));
+}
+
+.floating-whatsapp {
+	position: fixed;
+	right: 1.2rem;
+	bottom: 1.2rem;
+	z-index: 50;
+	display: inline-flex;
+	height: 3.5rem;
+	width: 3.5rem;
+	align-items: center;
+	justify-content: center;
+	border-radius: 9999px;
+	background: #25d366;
+	color: white;
+	box-shadow: 0 18px 30px -12px rgb(37 211 102 / 0.55);
+}
+
+.floating-whatsapp:hover {
+	transform: scale(1.05);
+}
+
+.review-card {
+	border-radius: 1.5rem;
+	border: 1px solid hsl(var(--border) / 0.8);
+	background: hsl(var(--card) / 0.88);
+	box-shadow: 0 12px 28px -22px hsl(24 22% 11% / 0.35);
+}
+
+.faq-item {
+	border-radius: 1.5rem;
+	border: 1px solid hsl(var(--border) / 0.9);
+	background: hsl(var(--card) / 0.92);
+	box-shadow: 0 12px 28px -24px hsl(24 22% 11% / 0.3);
+}
+
+.faq-item summary {
+	cursor: pointer;
+	list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.section {
+		padding: 4rem 0;
+	}
+
+	.section-kicker {
+		letter-spacing: 0.24em;
+		gap: 0.55rem;
+	}
+
+	.section-kicker::before,
+	.section-kicker::after {
+		width: 1.8rem;
+	}
+}
