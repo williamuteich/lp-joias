@@ -31,21 +31,21 @@ export default function HeroSection() {
 
           <div className="space-y-2 py-2 border-y border-pink-100/60 max-w-md">
             <div className="flex items-baseline gap-2 flex-wrap">
-              <span className="text-sm text-gray-400 line-through">De R$ 199,90</span>
-              <span className="text-[#c53d6a] font-serif text-3xl sm:text-4.5xl font-semibold">R$ 99,90</span>
+              <span className="text-xs text-[#8c767b] font-medium mr-0.5">A partir de</span>
+              <span className="text-[#c53d6a] font-serif text-3xl sm:text-4.5xl font-semibold">R$ 89,90</span>
               <span className="text-xs text-gray-500 font-medium">o par</span>
             </div>
             <p className="text-[13px] text-gray-500">
-              ou <strong className="text-gray-700">5x de R$ 18,88</strong> no cartão • <strong className="text-gray-700">10% OFF</strong> no PIX
+              ou em até <strong className="text-gray-700">6x sem juros</strong> no cartão
             </p>
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
-              href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20comprar%20o%20par%20de%20alian%C3%A7as%20por%20R$99,90."
+              href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20comprar%20alian%C3%A7as%20a%20partir%20de%20R$89,90."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-[#c53d6a] hover:bg-[#ae2e59] text-white! font-bold px-8 py-4 rounded-full shadow-md hover:shadow-lg transition-all text-sm uppercase tracking-wider"
+              className="inline-flex items-center justify-center gap-2 bg-[#c53d6a] hover:bg-[#ae2e59] text-white! font-bold px-8 py-4 rounded-full transition-all text-sm uppercase tracking-wider"
               style={{ color: '#ffffff' }}
             >
               <WhatsAppIcon />
@@ -53,36 +53,39 @@ export default function HeroSection() {
             </a>
             <a
               href="#colecoes"
-              className="inline-flex items-center justify-center border border-gray-300 hover:border-gray-400 bg-white text-gray-800 font-bold px-8 py-4 rounded-full shadow-sm hover:shadow-md transition-all text-sm uppercase tracking-wider"
+              className="inline-flex items-center justify-center border border-gray-300 hover:border-gray-400 bg-white text-gray-800 font-bold px-8 py-4 rounded-full transition-all text-sm uppercase tracking-wider"
             >
               Ver modelos
             </a>
           </div>
         </div>
 
-        <div className="relative justify-self-center lg:justify-self-end w-full max-w-[480px]">
-          <div className="relative aspect-square w-full overflow-hidden rounded-[4px] border border-pink-100 bg-white p-2 shadow-xl">
+        <div className="relative justify-self-center lg:justify-self-end w-full max-w-[440px]">
+          <div className="relative aspect-3/4 w-full overflow-hidden rounded-[4px] border border-pink-100 bg-white p-2">
             <div className="relative h-full w-full overflow-hidden rounded-[2px]">
               <Image
-                src="/assets/hero-jewelry.jpg"
+                src="/assets/noivos-aliancas.jpg"
                 alt="Alianças Glamour Lindóia"
                 fill
                 priority
-                sizes="(max-width: 768px) 100vw, 480px"
+                sizes="(max-width: 768px) 100vw, 440px"
                 className="object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
 
-            <div className="absolute top-5 right-5 bg-[#c53d6a] text-white text-[11px] font-bold px-3 py-1 uppercase tracking-wider shadow-sm z-10">
-              -50% HOJE
+            <div className="absolute top-5 right-5 bg-[#c53d6a] text-white text-[11px] font-bold px-3 py-1 uppercase tracking-wider z-10">
+              LANÇAMENTO
             </div>
 
-            <div className="absolute -bottom-4 -left-4 bg-white border border-pink-100 px-5 py-3 shadow-lg z-10 max-w-[180px] rounded-sm">
+            <div className="absolute -bottom-4 -left-4 bg-white border border-pink-100 px-5 py-3 z-10 max-w-[200px] rounded-sm">
               <span className="block text-[9px] font-bold text-[#c53d6a] uppercase tracking-widest mb-1">
-                Mais Vendido
+                Em Destaque
               </span>
               <span className="block text-sm font-medium font-serif text-[#24161a]">
-                Par Eternidade
+                Coleção Namorados
+              </span>
+              <span className="block text-[11px] text-[#8c767b] mt-1">
+                A partir de <strong className="text-[#c53d6a] font-serif text-sm">R$ 89,90</strong> o par
               </span>
             </div>
           </div>

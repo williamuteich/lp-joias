@@ -64,13 +64,13 @@ export default function OfferBannerSection() {
 
         <div className="pt-2">
           <a
-            href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20garantir%20minha%20alian%C3%A7a%20por%20R$99,90%20antes%20que%20o%20estoque%20acabe."
+            href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20garantir%20minha%20alian%C3%A7a%20a%20partir%20de%20R$89,90%20antes%20que%20o%20estoque%20acabe."
             target="_blank"
             rel="noopener noreferrer"
-            className="lux-button lux-button-primary text-white! text-xs sm:text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg"
+            className="lux-button lux-button-primary text-white! text-xs sm:text-sm uppercase tracking-widest transition-all"
             style={{ color: '#ffffff' }}
           >
-            Quero minha aliança por R$ 99,90
+            Quero minha aliança a partir de R$ 89,90
           </a>
         </div>
       </div>

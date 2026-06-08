@@ -5,12 +5,12 @@ const testimonials = [
   {
     name: "Vanessa Martins",
     image: null,
-    text: "Loja simplesmente maravilhosa! O atendimento é impecável, super atencioso e acolhedor. As peças são lindas e com ótimo acabamento.",
+    text: "Loja simplesmente maravilhosa! O atendimento é impecável, super atencioso e acolhedor. A qualidade das semi joias e acessórios é excelente, peças lindas, modernas e com ótimo acabamento. Dá pra ver o cuidado e o carinho em cada detalhe. Com certeza virei cliente fiel. Recomendo muito!",
   },
   {
     name: "Pamela Uteich Rodrigues",
     image: "/assets/PamelaUteichRodrigues.png",
-    text: "Experiência maravilhosa! A loja é organizada, tem grande variedade de peças lindas e de ótima qualidade. Volto com certeza.",
+    text: "Experiência maravilhosa! A loja é organizada, tem uma grande variedade de bijuterias e maquiagens lindas e de ótima qualidade. O atendimento foi impecável, com certeza voltarei mais vezes.",
   },
   {
     name: "Lisiane Almada Cauduro e Kolas",
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Maribel Zanotto",
     image: "/assets/MaribelZanotto.png",
-    text: "Loja maravilhosa, atendimento impecável e ambiente agradável. Sempre fui muito bem recebida.",
+    text: "Loja maravilhosa! Atendimento impecável, ambiente agradável e tudo muito bem organizado. Sempre fui muito bem recebida 🥰",
   },
   {
     name: "Karen Leticia Brunisaki",
@@ -30,7 +30,7 @@ const testimonials = [
   {
     name: "Cristina Pereira",
     image: "/assets/CristinaPereira.png",
-    text: "Sou cliente há anos e encontro peças lindas, por um ótimo preço, sempre com muito carinho no atendimento.",
+    text: "Sou cliente há anos da Glamour Lindóia, pois lá sempre sou recebida com muito carinho e encontro semi jóias lindas, por um ótimo preço!",
   },
 ];
 
