@@ -77,7 +77,9 @@ export default function ShowcaseSection() {
                       <span className="text-[#c53d6a] font-serif text-xl font-semibold">
                         {cat.currentPrice}
                       </span>
-                      <span className="text-[11px] text-gray-500">o par</span>
+                      <span className="inline-flex items-center bg-[#c53d6a] text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                        cada aliança
+                      </span>
                     </div>
                     <p className="text-[11px] text-[#8c767b]">
                       ou em até 6x sem juros no cartão

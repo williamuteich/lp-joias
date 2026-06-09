@@ -33,7 +33,9 @@ export default function HeroSection() {
             <div className="flex items-baseline gap-2 flex-wrap">
               <span className="text-xs text-[#8c767b] font-medium mr-0.5">A partir de</span>
               <span className="text-[#c53d6a] font-serif text-3xl sm:text-4.5xl font-semibold">R$ 89,90</span>
-              <span className="text-xs text-gray-500 font-medium">o par</span>
+              <span className="inline-flex items-center bg-[#c53d6a] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
+                cada aliança
+              </span>
             </div>
             <p className="text-[13px] text-gray-500">
               ou em até <strong className="text-gray-700">6x sem juros</strong> no cartão
@@ -60,7 +62,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative justify-self-center lg:justify-self-end w-full max-w-[440px]">
+        <div className="relative justify-self-center lg:justify-self-end w-full max-w-[440px] pb-10 pl-6">
           <div className="relative aspect-3/4 w-full overflow-hidden rounded-[4px] border border-pink-100 bg-white p-2">
             <div className="relative h-full w-full overflow-hidden rounded-[2px]">
               <Image
@@ -76,18 +78,24 @@ export default function HeroSection() {
             <div className="absolute top-5 right-5 bg-[#c53d6a] text-white text-[11px] font-bold px-3 py-1 uppercase tracking-wider z-10">
               LANÇAMENTO
             </div>
+          </div>
 
-            <div className="absolute -bottom-4 -left-4 bg-white border border-pink-100 px-5 py-3 z-10 max-w-[200px] rounded-sm">
-              <span className="block text-[9px] font-bold text-[#c53d6a] uppercase tracking-widest mb-1">
-                Em Destaque
+          {/* Card fora do overflow-hidden para não ser cortado */}
+          <div className="absolute -bottom-2 -left-2 bg-[#c53d6a] shadow-xl px-5 py-4 z-10 max-w-[220px] rounded-lg">
+            <span className="block text-[9px] font-bold text-pink-200 uppercase tracking-widest mb-1.5">
+              Em Destaque
+            </span>
+            <span className="block text-[15px] font-semibold font-serif text-white leading-tight">
+              Coleção Namorados
+            </span>
+            <span className="block text-[12px] text-pink-100 mt-2 leading-snug">
+              A partir de{" "}
+              <strong className="text-white font-serif text-[15px]">R$ 89,90</strong>
+              {" "}
+              <span className="inline-block bg-white/25 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                cada aliança
               </span>
-              <span className="block text-sm font-medium font-serif text-[#24161a]">
-                Coleção Namorados
-              </span>
-              <span className="block text-[11px] text-[#8c767b] mt-1">
-                A partir de <strong className="text-[#c53d6a] font-serif text-sm">R$ 89,90</strong> o par
-              </span>
-            </div>
+            </span>
           </div>
         </div>
       </div>
