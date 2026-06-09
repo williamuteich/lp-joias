@@ -1,4 +1,6 @@
+"use client";
 import { Check } from "lucide-react";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 export default function GuaranteeSection() {
   return (
@@ -20,15 +22,13 @@ export default function GuaranteeSection() {
         </p>
 
         <div className="pt-2">
-          <a
-            href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20garantia%20de%206%20meses%20e%20pedir%20minhas%20alian%C3%A7as."
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => openWhatsApp(WA_LINKS.guarantee)}
             className="lux-button lux-button-primary text-white! text-xs sm:text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg"
             style={{ color: '#ffffff' }}
           >
             Garantir meu par agora
-          </a>
+          </button>
         </div>
       </div>
     </section>

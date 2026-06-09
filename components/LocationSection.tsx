@@ -1,3 +1,6 @@
+"use client";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
+
 export default function LocationSection() {
   return (
     <section id="localizacao" className="section bg-[hsl(var(--secondary)/0.34)]">
@@ -40,15 +43,13 @@ export default function LocationSection() {
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20ver%20as%20joias%20em%20a%C3%A7o%20cir%C3%BArgico%20e%20prata."
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => openWhatsApp(WA_LINKS.location)}
                 className="lux-button lux-button-primary text-white!"
                 style={{ color: '#ffffff' }}
               >
                 Falar no WhatsApp
-              </a>
+              </button>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Glamour+Lind%C3%B3ia,+Shopping+Lind%C3%B3ia,+Porto+Alegre"
                 target="_blank"

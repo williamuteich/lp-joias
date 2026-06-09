@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 export default function Header() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -59,15 +60,13 @@ export default function Header() {
             </div>
           </a>
 
-          <a
-            href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20ver%20as%20alian%C3%A7as%20da%20oferta."
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => openWhatsApp(WA_LINKS.header)}
             className="inline-flex items-center justify-center bg-[#c53d6a] hover:bg-[#ae2e59] text-white! text-[10px] sm:text-xs font-bold px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all uppercase tracking-widest border border-white/10"
             style={{ color: '#ffffff' }}
           >
             Quero minha aliança
-          </a>
+          </button>
         </div>
       </header>
     </div>

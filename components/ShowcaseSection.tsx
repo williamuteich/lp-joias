@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 const categories = [
   {
@@ -86,15 +88,13 @@ export default function ShowcaseSection() {
                     </p>
                   </div>
 
-                  <a
-                    href={`https://wa.me/555189703450?text=Ol%C3%A1!%20Tenho%20interesse%20na%20categoria%20${encodeURIComponent(cat.title)}.%20Quero%20ver%20os%20modelos%20dispon%C3%ADveis.`}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => openWhatsApp(WA_LINKS.showcase(cat.title))}
                     className="block w-full text-center bg-[#170e10] hover:bg-black text-white! text-xs font-bold py-3.5 px-4 rounded-full uppercase tracking-widest transition-colors"
                     style={{ color: '#ffffff' }}
                   >
                     Ver modelos desta categoria
-                  </a>
+                  </button>
                 </div>
               </div>
             </article>

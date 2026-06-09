@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -43,15 +45,13 @@ export default function Footer() {
             >
               <InstagramIcon className="h-5 w-5" />
             </a>
-            <a
-              href="https://wa.me/555189703450"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => openWhatsApp(WA_LINKS.footer)}
               className="rounded-full p-2 text-[hsl(var(--muted-foreground))] transition-colors hover:text-[hsl(var(--primary))]"
               aria-label="WhatsApp"
             >
               <WhatsAppIcon className="h-5 w-5" />
-            </a>
+            </button>
           </div>
 
           <div className="h-px w-20 bg-[hsl(var(--primary)/0.22)]" />

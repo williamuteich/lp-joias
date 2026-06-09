@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 export default function OfferBannerSection() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -63,15 +64,13 @@ export default function OfferBannerSection() {
         </p>
 
         <div className="pt-2">
-          <a
-            href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20garantir%20minha%20alian%C3%A7a%20a%20partir%20de%20R$89,90%20antes%20que%20o%20estoque%20acabe."
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => openWhatsApp(WA_LINKS.banner)}
             className="lux-button lux-button-primary text-white! text-xs sm:text-sm uppercase tracking-widest transition-all"
             style={{ color: '#ffffff' }}
           >
             Quero minha aliança a partir de R$ 89,90
-          </a>
+          </button>
         </div>
       </div>
     </section>

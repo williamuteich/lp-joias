@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 const WhatsAppIcon = () => (
   <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
@@ -43,16 +45,14 @@ export default function HeroSection() {
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <a
-              href="https://wa.me/555189703450?text=Ol%C3%A1!%20Quero%20comprar%20alian%C3%A7as%20a%20partir%20de%20R$89,90."
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => openWhatsApp(WA_LINKS.hero)}
               className="inline-flex items-center justify-center gap-2 bg-[#c53d6a] hover:bg-[#ae2e59] text-white! font-bold px-8 py-4 rounded-full transition-all text-sm uppercase tracking-wider"
               style={{ color: '#ffffff' }}
             >
               <WhatsAppIcon />
               Comprar pelo WhatsApp
-            </a>
+            </button>
             <a
               href="#colecoes"
               className="inline-flex items-center justify-center border border-gray-300 hover:border-gray-400 bg-white text-gray-800 font-bold px-8 py-4 rounded-full transition-all text-sm uppercase tracking-wider"
