@@ -28,7 +28,9 @@ export function openWhatsApp(url: string) {
   // Dispara evento de conversão do Google Ads
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
     (window as any).gtag("event", "conversion", {
-      send_to: "AW-18090998787",
+      send_to: "AW-18090998787/Rc3RCJKozrscEIP4urJD",
+      value: 1.0,
+      currency: "BRL",
     });
   }
   window.open(url, "_blank", "noopener,noreferrer");
