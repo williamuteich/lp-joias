@@ -18,7 +18,7 @@ export default function HeroSection() {
         <div className="space-y-8">
           <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.25em] text-[#c53d6a]">
             <span className="w-8 h-px bg-[#c53d6a]" />
-            Dia dos Namorados 2026
+            Namorados • Promoção Prorrogada
           </div>
 
           <div className="space-y-5">
@@ -27,7 +27,7 @@ export default function HeroSection() {
               selam o <span className="text-[#c53d6a] italic font-serif">seu amor</span>
             </h1>
             <p className="max-w-xl text-[15px] sm:text-[16px] leading-relaxed text-[#6b585c]">
-              Namorados, noivos ou casados — o par perfeito para o seu Dia dos Namorados. Aço cirúrgico, banho de ouro 18k ou prata 925 com qualidade premium da Glamour Lindóia.
+              O Dia dos Namorados passou, mas a nossa promoção continua! Garanta o seu par de alianças perfeito em aço cirúrgico, banho de ouro 18k ou prata 925 com preços especiais até domingo (14/06) às 23:59.
             </p>
           </div>
 

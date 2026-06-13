@@ -8,7 +8,7 @@ export default function Header() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetTime = new Date(2026, 5, 12, 23, 59, 59).getTime();
+    const targetTime = new Date(2026, 5, 14, 23, 59, 59).getTime();
 
     const updateTimer = () => {
       const diff = targetTime - Date.now();
@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <div className="fixed inset-x-0 top-0 z-50 flex flex-col">
       <div className="bg-[#c53d6a] text-white py-2 px-4 text-center text-xs font-bold tracking-widest flex items-center justify-center gap-1 sm:gap-2 uppercase shadow-sm">
-        <span>♥ Oferta Dia dos Namorados • Acaba em</span>
+        <span>♥ Promoção Namorados Prorrogada! • Acaba em</span>
         <span className="font-mono bg-black/20 px-2 py-0.5 rounded text-[11px] sm:text-xs">
           {timeLeft.days > 0 ? `${timeLeft.days} ${timeLeft.days === 1 ? "dia" : "dias"}, ` : ""}
           {formatNumber(timeLeft.hours)}h {formatNumber(timeLeft.minutes)}m {formatNumber(timeLeft.seconds)}s

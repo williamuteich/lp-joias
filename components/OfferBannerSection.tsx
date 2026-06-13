@@ -8,7 +8,7 @@ export default function OfferBannerSection() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetTime = new Date(2026, 5, 12, 23, 59, 59).getTime();
+    const targetTime = new Date(2026, 5, 14, 23, 59, 59).getTime();
 
     const updateTimer = () => {
       const diff = targetTime - Date.now();
@@ -55,12 +55,12 @@ export default function OfferBannerSection() {
         </h2>
 
         <p className="text-sm sm:text-base text-white/80 max-w-2xl leading-relaxed">
-          A oferta termina em{" "}
+          O Dia dos Namorados passou, mas a promoção foi prorrogada! Aproveite, restam apenas{" "}
           <strong className="font-mono bg-white/10 px-2 py-0.5 rounded text-white text-[13px] sm:text-[15px]">
             {timeLeft.days > 0 ? `${timeLeft.days} ${timeLeft.days === 1 ? "dia" : "dias"}, ` : ""}
             {formatNumber(timeLeft.hours)}h {formatNumber(timeLeft.minutes)}m {formatNumber(timeLeft.seconds)}s
           </strong>
-          . Fale com a gente agora pelo WhatsApp e garanta seu par.
+          . Garanta seu par com preço promocional.
         </p>
 
         <div className="pt-2">
