@@ -8,10 +8,10 @@ export default function LocationSection() {
         <div className="mb-14">
           <div className="section-kicker">Localização</div>
           <h2 className="section-title">
-            Tráfego local funciona melhor quando <span className="text-gradient-gold italic">a loja é fácil de achar</span>
+            Venha conhecer nossa <span className="text-gradient-gold italic">loja física</span>
           </h2>
           <p className="section-copy">
-            Use esta seção para empurrar a visita presencial, mostrar mapa e reforçar horário de atendimento.
+            Quer ver os modelos de perto e experimentar? Visite nossa loja no Shopping Lindóia para receber um atendimento exclusivo.
           </p>
         </div>
 
