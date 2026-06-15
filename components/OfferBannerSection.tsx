@@ -1,35 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 export default function OfferBannerSection() {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
-  useEffect(() => {
-    const targetTime = new Date(2026, 5, 14, 23, 59, 59).getTime();
-
-    const updateTimer = () => {
-      const diff = targetTime - Date.now();
-      if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      } else {
-        const days = Math.floor(diff / (24 * 3600 * 1000));
-        const hours = Math.floor((diff % (24 * 3600 * 1000)) / (3600 * 1000));
-        const minutes = Math.floor((diff % (3600 * 1000)) / (60 * 1000));
-        const seconds = Math.floor((diff % (60 * 1000)) / 1000);
-        setTimeLeft({ days, hours, minutes, seconds });
-      }
-    };
-
-    updateTimer();
-    const interval = setInterval(updateTimer, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const formatNumber = (num: number) => String(num).padStart(2, "0");
-
   return (
     <section className="relative py-24 text-white overflow-hidden text-center">
       <div className="absolute inset-0 z-0">
@@ -55,12 +29,7 @@ export default function OfferBannerSection() {
         </h2>
 
         <p className="text-sm sm:text-base text-white/80 max-w-2xl leading-relaxed">
-          O Dia dos Namorados passou, mas a promoção foi prorrogada! Aproveite, restam apenas{" "}
-          <strong className="font-mono bg-white/10 px-2 py-0.5 rounded text-white text-[13px] sm:text-[15px]">
-            {timeLeft.days > 0 ? `${timeLeft.days} ${timeLeft.days === 1 ? "dia" : "dias"}, ` : ""}
-            {formatNumber(timeLeft.hours)}h {formatNumber(timeLeft.minutes)}m {formatNumber(timeLeft.seconds)}s
-          </strong>
-          . Garanta seu par com preço promocional.
+          Aproveite as nossas condições especiais! Garanta seu par de alianças com preço promocional de fábrica e frete grátis para todo o Brasil.
         </p>
 
         <div className="pt-2">

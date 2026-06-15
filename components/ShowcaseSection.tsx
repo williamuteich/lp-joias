@@ -39,7 +39,7 @@ export default function ShowcaseSection() {
             Escolha o par que conta a sua <span className="text-[#c53d6a] italic font-serif">história</span>
           </h2>
           <p className="max-w-xl text-[15px] text-[#6b585c] leading-relaxed">
-            Três categorias, dezenas de modelos. Antialérgicos, com acabamento premium e estoque limitado com a Promoção de Namorados Prorrogada.
+            Três categorias, dezenas de modelos. Peças antialérgicas, com acabamento premium e estoque limitado para pronta entrega.
           </p>
         </div>
 

@@ -1,43 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 export default function Header() {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
-  useEffect(() => {
-    const targetTime = new Date(2026, 5, 14, 23, 59, 59).getTime();
-
-    const updateTimer = () => {
-      const diff = targetTime - Date.now();
-      if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      } else {
-        const days = Math.floor(diff / (24 * 3600 * 1000));
-        const hours = Math.floor((diff % (24 * 3600 * 1000)) / (3600 * 1000));
-        const minutes = Math.floor((diff % (3600 * 1000)) / (60 * 1000));
-        const seconds = Math.floor((diff % (60 * 1000)) / 1000);
-        setTimeLeft({ days, hours, minutes, seconds });
-      }
-    };
-
-    updateTimer();
-    const interval = setInterval(updateTimer, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const formatNumber = (num: number) => String(num).padStart(2, "0");
-
   return (
     <div className="fixed inset-x-0 top-0 z-50 flex flex-col">
       <div className="bg-[#c53d6a] text-white py-2 px-4 text-center text-xs font-bold tracking-widest flex items-center justify-center gap-1 sm:gap-2 uppercase shadow-sm">
-        <span>♥ Promoção Namorados Prorrogada! • Acaba em</span>
-        <span className="font-mono bg-black/20 px-2 py-0.5 rounded text-[11px] sm:text-xs">
-          {timeLeft.days > 0 ? `${timeLeft.days} ${timeLeft.days === 1 ? "dia" : "dias"}, ` : ""}
-          {formatNumber(timeLeft.hours)}h {formatNumber(timeLeft.minutes)}m {formatNumber(timeLeft.seconds)}s
-        </span>
+        <span>♥ Promoção Especial de Alianças • Preço de Fábrica!</span>
       </div>
 
       <header className="border-b border-pink-100 bg-white/90 backdrop-blur-md py-4 shadow-sm">
