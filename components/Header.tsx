@@ -1,13 +1,34 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 export default function Header() {
+  const [timeLeft, setTimeLeft] = useState("");
+
+  useEffect(() => {
+    const updateTimer = () => {
+      const cycleMs = 8 * 60 * 60 * 1000;
+      const now = Date.now();
+      const currentPosition = now % cycleMs;
+      const remainingMs = (32 * 60 * 60 * 1000) - currentPosition;
+      const hours = Math.floor(remainingMs / (60 * 60 * 1000));
+      const minutes = Math.floor((remainingMs % (60 * 60 * 1000)) / (60 * 1000));
+      const seconds = Math.floor((remainingMs % (60 * 1000)) / 1000);
+      const pad = (n: number) => String(n).padStart(2, "0");
+      setTimeLeft(`${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`);
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="fixed inset-x-0 top-0 z-50 flex flex-col">
       <div className="bg-[#c53d6a] text-white py-2.5 px-4 text-center text-[10px] sm:text-xs font-extrabold tracking-widest flex items-center justify-center gap-2 uppercase shadow-sm">
-        <span>Compre o par de alianças e ganhe uma página de homenagem grátis</span>
+        <span>Compre o par de aliancas e ganhe uma pagina de homenagem gratis • Tempo restante: {timeLeft}</span>
       </div>
 
       <header className="border-b border-pink-100 bg-white/90 backdrop-blur-md py-4 shadow-sm">
