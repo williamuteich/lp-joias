@@ -86,6 +86,11 @@ export default function ShowcaseSection() {
                     <p className="text-[11px] text-[#8c767b]">
                       ou em até 6x sem juros no cartão
                     </p>
+                    <div className="pt-1.5">
+                      <span className="inline-flex items-center gap-1 bg-[#c53d6a]/10 text-[#c53d6a] text-[9px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-md border border-[#c53d6a]/15">
+                        Incluso: Pagina de Homenagem Grátis (7 Dias)
+                      </span>
+                    </div>
                   </div>
 
                   <button

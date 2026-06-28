@@ -4,7 +4,7 @@ import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 
 const WhatsAppIcon = () => (
   <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24">
-    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.498 1.45 5.42 1.451 5.58 0 10.121-4.542 10.124-10.122.002-2.702-1.05-5.244-2.96-7.157C17.32 1.412 14.78 0.36 12.008 0.36 6.425.36 1.884 4.901 1.881 10.485c-.001 1.81.474 3.58 1.378 5.155l-1.012 3.697 3.81-.999zM17.91 14.65c-.32-.16-1.89-.93-2.185-1.04-.294-.11-.51-.16-.724.16-.214.32-.83 1.04-1.018 1.25-.187.21-.375.24-.694.08-.318-.16-1.343-.495-2.558-1.578-.946-.844-1.585-1.886-1.772-2.2-.187-.32-.02-.49.14-.65.144-.144.32-.37.48-.56.16-.19.213-.32.32-.53.107-.21.053-.4-.027-.56-.08-.16-.724-1.74-.993-2.39-.26-.63-.53-.55-.724-.56-.187-.01-.4-.01-.614-.01-.214 0-.56.08-.853.4-.293.32-1.12 1.1-1.12 2.678 0 1.579 1.147 3.106 1.307 3.32.16.21 2.257 3.447 5.467 4.834.763.33 1.36.527 1.822.674.768.243 1.467.209 2.02.127.617-.092 1.89-.77 2.156-1.48.266-.71.266-1.32.187-1.45-.078-.13-.293-.21-.613-.37z" />
+    <path d="M12.03 2c-5.52 0-10 4.48-10 10 0 1.71.44 3.38 1.26 4.89L2 22l5.22-1.22c1.42.78 3.09 1.22 4.81 1.22 5.52 0 10-4.48 10-10 0-5.52-4.48-10-10-10zm0 18c-1.49 0-2.96-.37-4.27-1.08l-.31-.17-3.18.74.76-3.08-.18-.31c-.71-1.19-1.08-2.56-1.08-3.97 0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8z" />
   </svg>
 );
 
@@ -27,7 +27,7 @@ export default function HeroSection() {
               selam o <span className="text-[#c53d6a] italic font-serif">seu amor</span>
             </h1>
             <p className="max-w-xl text-[15px] sm:text-[16px] leading-relaxed text-[#6b585c]">
-              Garanta o seu par de alianças perfeito em aço cirúrgico, banho de ouro 18k ou prata 925 com preços especiais de fábrica, frete grátis e gravação inclusa.
+              Garanta o seu par de alianças perfeito em aço cirúrgico, banho de ouro 18k ou prata 925 com preços especiais de fábrica, gravação inclusa e ganhe de presente uma página de homenagem exclusiva para o casal.
             </p>
           </div>
 
@@ -80,21 +80,15 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Card fora do overflow-hidden para não ser cortado */}
           <div className="absolute -bottom-2 -left-2 bg-[#c53d6a] shadow-xl px-5 py-4 z-10 max-w-[220px] rounded-lg">
             <span className="block text-[9px] font-bold text-pink-200 uppercase tracking-widest mb-1.5">
-              Em Destaque
+              PRESENTE EXCLUSIVO
             </span>
             <span className="block text-[15px] font-semibold font-serif text-white leading-tight">
-              Coleção Namorados
+              Pagina de Homenagem
             </span>
-            <span className="block text-[12px] text-pink-100 mt-2 leading-snug">
-              A partir de{" "}
-              <strong className="text-white font-serif text-[15px]">R$ 89,90</strong>
-              {" "}
-              <span className="inline-block bg-white/25 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
-                cada aliança
-              </span>
+            <span className="block text-[11px] text-pink-100 mt-2 leading-snug">
+              Ganhe 7 dias gratis na compra de qualquer par de aliancas na loja fisica
             </span>
           </div>
         </div>

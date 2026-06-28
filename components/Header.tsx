@@ -6,8 +6,8 @@ import { openWhatsApp, WA_LINKS } from "@/lib/whatsapp";
 export default function Header() {
   return (
     <div className="fixed inset-x-0 top-0 z-50 flex flex-col">
-      <div className="bg-[#c53d6a] text-white py-2 px-4 text-center text-xs font-bold tracking-widest flex items-center justify-center gap-1 sm:gap-2 uppercase shadow-sm">
-        <span>♥ Promoção Especial de Alianças • Preço de Fábrica!</span>
+      <div className="bg-[#c53d6a] text-white py-2.5 px-4 text-center text-[10px] sm:text-xs font-extrabold tracking-widest flex items-center justify-center gap-2 uppercase shadow-sm">
+        <span>Compre o par de alianças e ganhe uma página de homenagem grátis</span>
       </div>
 
       <header className="border-b border-pink-100 bg-white/90 backdrop-blur-md py-4 shadow-sm">
