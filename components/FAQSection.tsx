@@ -1,8 +1,18 @@
 const faqs = [
   {
-    question: "As joias são em que material?",
+    question: "Como funciona a Pagina de Homenagem que ganho de presente?",
     answer:
-      "Trabalhamos com peças em aço cirúrgico com 10x banho em ouro 18k e também opções em prata, pensadas para presença e durabilidade.",
+      "Na compra de qualquer par de aliancas em nossa loja fisica, voce ganha um cupom exclusivo para resgatar 7 dias gratis de uma pagina de homenagem personalizada para o seu amor. Voce pode criar a pagina facilmente, definindo o nome de voces, escolhendo o estilo visual (Player Spotify ou Story Instagram), escrevendo uma carta de amor especial, selecionando a musica do casal (basta copiar um link da musica no YouTube) e configurando a data especial do relacionamento para exibir um calendario e um contador de tempo automatico de relacionamento.",
+  },
+  {
+    question: "Como faco para renovar ou manter a pagina no ar apos os 7 dias?",
+    answer:
+      "Caso queira manter a sua homenagem ativa apos o periodo gratuito de 7 dias, voce podera fazer a renovacao diretamente no painel administrativo da sua pagina. La estarao disponiveis opcoes de renovacao para escolher conforme sua preferencia pelo periodo de 1 dia, 7 dias ou 30 dias adicionais.",
+  },
+  {
+    question: "As joias sao em que material?",
+    answer:
+      "Trabalhamos com pecas em aco cirurgico com 10x banho em ouro 18k e tambem opcoes em prata, pensadas para presenca e durabilidade.",
   },
   {
     question: "Tem opções para namoro, noivado e casamento?",
