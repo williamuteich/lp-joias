@@ -16,9 +16,9 @@ export default function HeroSection() {
 
       <div className="container-shell relative grid items-center gap-12 lg:grid-cols-[1fr_1fr]">
         <div className="space-y-8">
-          <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.25em] text-[#c53d6a]">
+          <div className="flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.18em] text-[#c53d6a] flex-wrap">
             <span className="w-8 h-px bg-[#c53d6a]" />
-            Coleção Exclusiva • Oferta Especial
+            📍 Shopping Lindóia — Térreo · Loja Glamour
           </div>
 
           <div className="space-y-5">

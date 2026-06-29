@@ -46,16 +46,23 @@ export default function OfferBannerSection() {
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-medium leading-tight tracking-tight font-serif">
-          Nao deixe o <span className="text-[#c53d6a] italic font-serif">amor</span> para amanha
+          Últimas unidades no <span className="text-[#f87171] italic font-serif">estoque</span> — garante hoje
         </h2>
 
         <p className="text-sm sm:text-base text-white/80 max-w-2xl leading-relaxed">
-          Aproveite as nossas condicoes especiais! Garanta seu par de aliancas com preco promocional de fabrica, gravacao inclusa e ganhe de presente uma pagina de homenagem exclusiva.
+          Preço promocional de fábrica, gravação inclusa e Página de Homenagem exclusiva de presente. <strong className="text-white">Retire agora mesmo</strong> na nossa loja física no <strong className="text-white">Shopping Lindóia — Térreo, Porto Alegre.</strong> Estoque limitado, sem garantia de reposição.
         </p>
 
-        <div className="bg-[#c53d6a]/90 text-white border border-[#c53d6a]/40 px-6 py-3.5 rounded-2xl inline-flex flex-col items-center gap-1 shadow-lg backdrop-blur-xs">
-          <span className="text-[10px] font-extrabold uppercase tracking-widest text-pink-200">A pagina de homenagem gratis expira em</span>
-          <span className="font-mono text-xl font-black">{timeLeft}</span>
+        <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
+          <div className="bg-[#dc2626] text-white border border-red-400/30 px-6 py-3.5 rounded-2xl inline-flex flex-col items-center gap-1 shadow-lg backdrop-blur-xs">
+            <span className="text-[10px] font-extrabold uppercase tracking-widest text-red-200">⏳ Oferta expira em</span>
+            <span className="font-mono text-xl font-black">{timeLeft}</span>
+          </div>
+          <div className="bg-white/10 border border-white/20 px-6 py-3.5 rounded-2xl inline-flex flex-col items-center gap-1 shadow-lg backdrop-blur-xs text-center">
+            <span className="text-[10px] font-extrabold uppercase tracking-widest text-white/70">📍 Onde nos encontrar</span>
+            <span className="text-sm font-black text-white leading-tight">Shopping Lindóia · Térreo</span>
+            <span className="text-[11px] text-white/70 font-semibold">Porto Alegre — RS</span>
+          </div>
         </div>
 
         <div className="pt-2">

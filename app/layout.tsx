@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aliancas.glamourlindoia.com.br"),
 
   title:
-    "Alianças de Namoro a partir de R$89,90 | Glamour Lindóia",
+    "Alianças a partir de R$89,90 + Homenagem Grátis | Glamour Lindóia",
 
   description:
-    "Alianças de namoro e compromisso a partir de R$89,90 cada. Modelos em Prata 925, Aço Cirúrgico e Banho Ouro 18k. Loja física no Shopping Lindóia em Porto Alegre.",
+    "Alianças de namoro a partir de R$89,90 + gravação e Página de Homenagem grátis de presente. Retire na Loja Glamour, no Térreo do Shopping Lindóia em Porto Alegre!",
 
   keywords: [
     "aliança de namoro",
@@ -25,7 +25,10 @@ export const metadata: Metadata = {
     "alianças porto alegre",
     "loja de alianças porto alegre",
     "aliança shopping lindóia",
+    "aliança shopping lindóia térreo",
     "aliança dia dos namorados",
+    "ganhar página de homenagem",
+    "página do casal de presente",
   ],
 
   openGraph: {
@@ -35,10 +38,10 @@ export const metadata: Metadata = {
     siteName: "Glamour Lindóia",
 
     title:
-      "Alianças de Namoro a partir de R$89,90 | Glamour Lindóia",
+      "Alianças a partir de R$89,90 + Homenagem Grátis | Glamour Lindóia",
 
     description:
-      "Modelos em Prata 925, Aço Cirúrgico e Banho Ouro 18k. Loja física em Porto Alegre. Alianças a partir de R$89,90 cada.",
+      "Alianças de compromisso a partir de R$89,90 com gravação + Página de Homenagem de presente. Visite a Loja Glamour no Térreo do Shopping Lindóia em Porto Alegre!",
 
     images: [
       {
@@ -54,10 +57,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
 
     title:
-      "Alianças de Namoro a partir de R$89,90 | Glamour Lindóia",
+      "Alianças a partir de R$89,90 + Homenagem Grátis | Glamour Lindóia",
 
     description:
-      "Prata 925, Aço Cirúrgico e Banho Ouro 18k. Loja física em Porto Alegre.",
+      "Garanta seu par com gravação inclusa e ganhe uma Página de Homenagem grátis. Retire no Térreo do Shopping Lindóia, Porto Alegre.",
 
     images: ["/assets/noivos-aliancas.jpg"],
   },
