@@ -32,7 +32,6 @@ export default function Header() {
         <span className="hidden sm:inline text-white/40">|</span>
         <span className="whitespace-nowrap">🎁 Ganhe Página de Homenagem Grátis</span>
         <span className="hidden sm:inline text-white/40">|</span>
-        <span className="whitespace-nowrap">📍 Visite: Shopping Lindóia — Térreo · Porto Alegre</span>
       </div>
 
       <header className="border-b border-pink-100 bg-white/90 backdrop-blur-md py-4 shadow-sm">
